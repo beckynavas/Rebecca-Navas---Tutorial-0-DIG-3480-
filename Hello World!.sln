@@ -1,20 +1,29 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{7FDA8884-A1E7-E355-19BC-538C7BEF56B7}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7FDA8884-A1E7-E355-19BC-538C7BEF56B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FDA8884-A1E7-E355-19BC-538C7BEF56B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FDA8884-A1E7-E355-19BC-538C7BEF56B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FDA8884-A1E7-E355-19BC-538C7BEF56B7}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class TextController : MonoBehaviour
+{
+    public Text newText;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            newText.text = "Hello, my name is Becky Navas!";
+        }
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
+
+}
